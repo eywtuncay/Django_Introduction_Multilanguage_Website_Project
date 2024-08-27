@@ -1,0 +1,10 @@
+{% load static %}
+
+<div class="card mb-2">
+    <img src="{% static 'img/'|add:cozum.image %}" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">{{ cozum.solutions_name }}</h5>
+      <p class="card-text">{{ cozum.description }}</p>
+      <a href="{% url 'details' cozum.id %}" class="btn btn-primary">Detay</a>
+    </div>
+</div>

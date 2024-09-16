@@ -12,6 +12,8 @@ class Solutions(models.Model):
     image = models.ImageField(upload_to="solutions")
     homepage = models.BooleanField(default=False)
 
+
     def __str__(self):
         return f"{self.solutions_name}"
 
+   
